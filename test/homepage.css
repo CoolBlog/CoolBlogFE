@@ -28,7 +28,7 @@ a {
 }
 @media screen and (max-width: 1040px) {
   .container {
-    width: 750px;
+    width: 100%;
   }
   .search {
     position: absolute;
