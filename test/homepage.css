@@ -26,25 +26,41 @@ a {
 .font-size-one {
   font-size: 24px;
 }
-
-
-@media (min-width: 1200px) {
-  .container {
-    width: 960px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-@media (min-width: 768px) {
+@media screen and (max-width: 1040px) {
   .container {
     width: 750px;
   }
+  .search {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
 }
+@media screen and (min-width: 1040px) {
+  .container {
+    width: 800px;
+  }
+  .search {
+    position: absolute;
+    top: 0;
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+  .search {
+    position: absolute;
+    top: 0;
+    margin-top: 15px;
+  }
+}
+
+
+
+
 
 .container {
   padding-right: 15px;
@@ -146,7 +162,9 @@ a {
 #b-nav {
   height: 60px;
   border-bottom: 2px solid #ccc;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
 }
 
 #logo {
@@ -201,11 +219,7 @@ a {
   color: #fff;
 }
 
-.search {
-  position: absolute;
-  top: 0;
-  margin-top: 15px;
-}
+
 .search input {
   height: 30px;
   width: 60px;
@@ -225,4 +239,7 @@ a {
   color: #65B687;
 }
 
-
+/*section部分*/
+#b-section {
+  padding-top: 60px;
+}
