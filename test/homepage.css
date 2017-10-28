@@ -95,9 +95,9 @@ li {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #65B687;
+  background-color: #ccc;
   opacity: 0.4;
-  z-index: 1;
+  z-index: 101;
 }
 .model-content {
   position: fixed;
@@ -109,7 +109,7 @@ li {
   width: 400px;
   height: 380px;
   background: #fff;
-  z-index: 100;
+  z-index: 102;
 }
 .model-close-wrap {
   color: #65B687;
@@ -431,4 +431,5 @@ li {
   background-color: #fff;
   padding: 0 20px;
   color: #ccc;
+  font-size: 14px;
 }
