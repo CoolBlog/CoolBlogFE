@@ -23,6 +23,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 .font-size-one {
   font-size: 24px;
 }
@@ -55,6 +59,11 @@ a {
     position: absolute;
     top: 0;
     margin-top: 15px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .search {
+    display: none;
   }
 }
 
@@ -238,6 +247,72 @@ a {
 .search i {
   color: #65B687;
 }
+
+.dropdown {
+  position: absolute;
+  right: 100px;
+  top: 0;
+  height: 60px;
+  width: 30px;
+  border-radius: 50%;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-right: 20px;
+  color: #65B687;
+  cursor: pointer;
+  transition: .5s;
+  outline:none;
+}
+.dropdown:hover ul {
+  display: block;
+}
+.dropdown img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.dropdown ul {
+  display: none;
+  margin-top: 7px;
+  border: 2px solid #ccc;
+  width: 120px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #fff;
+}
+.dropdown ul li {
+  font-size: 16px;
+  padding: 10px;
+  transition: .3s;
+  color: #fff;
+}
+.dropdown ul li:hover {
+  background-color: #F5F5F5;
+}
+
+
+.write {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 30px;
+  width: 80px;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-right: 20px;
+  border: 1px solid #65B687;
+  background-color: #65B687;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .5s;
+  outline: none;
+}
+.write:hover {
+  background-color: #fff;
+  color: #65B687;
+}
+
 
 /*section部分*/
 #b-section {
