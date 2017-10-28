@@ -284,7 +284,9 @@ li {
   font-size: 16px;
   padding: 10px;
   transition: .3s;
-  color: #fff;
+}
+.dropdown ul li a {
+  color: #666;
 }
 .dropdown ul li:hover {
   background-color: #F5F5F5;
