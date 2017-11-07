@@ -1,13 +1,16 @@
 $('.signup').on('click', function () {
-  $('.model').show();
-  $('.model-title').text('注册')
-  $('.model-confirm').find('a').text('注册')
+  $('.model-signup').show();
 })
 
 $('.login').on('click', function () {
-  $('.model').show();
-  $('.model-title').text('登录')
-  $('.model-confirm').find('a').text('登录')
+  $('.model-login').show();
+})
+
+$('.model-confirm').find('input').on('click', function () {
+  var username = $('.model-line').find('input').val();
+  if(username = '') {
+    alert('用户名不能为空')
+  }
 })
 
 $('.model-close').on('click', function () {

@@ -166,9 +166,15 @@ li {
   cursor: pointer;
   transition: .5s;
 }
-.model-confirm a{
+.model-confirm input{
   color: #fff;
-  display: block;
+  background-color: #65B687;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  height:100%;
+  width: 100%;
+  border-radius: 8px;
 }
 .model-confirm:hover {
   box-shadow: 0 0 10px #65B687;

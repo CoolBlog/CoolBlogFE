@@ -7,7 +7,7 @@
   <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" href="../../favicon.ico">
+  <!--<link rel="icon" href="../../favicon.ico">-->
 
   <title>COOLBLOG</title>
 
@@ -255,30 +255,60 @@
 </section>
 
 
-<div class="model">
+<div class="model model-signup">
   <div class="mask"></div>
-  <div class="model-content signup-content">
-    <a class="model-close-wrap">
-      <i class="fa fa-times-circle-o model-close" aria-hidden="true"></i>
-    </a>
-    <div class="model-title signup-title">
-      注册
+  <form action="/register" method="post" class="signup-form">
+    <div class="model-content signup-content">
+      <a class="model-close-wrap">
+        <i class="fa fa-times-circle-o model-close" aria-hidden="true"></i>
+      </a>
+      <div class="model-title signup-title">
+        注册
+      </div>
+      <div class="model-input">
+        <div class="model-line">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <input type="text" name = "username" placeholder="昵称">
+        </div>
+        <div class="model-line">
+          <i class="fa fa-lock" aria-hidden="true"></i>
+          <input type="password" name = "password" placeholder="密码">
+        </div>
+        <div class="model-confirm">
+          <input type="submit" value="注册">
+        </div>
+      </div>
     </div>
-    <div class="model-input">
-      <div class="model-line">
-        <i class="fa fa-user" aria-hidden="true"></i>
-        <input type="text" placeholder="昵称">
-      </div>
-      <div class="model-line">
-        <i class="fa fa-lock" aria-hidden="true"></i>
-        <input type="text" placeholder="密码">
-      </div>
-      <div class="model-confirm">
-        <a href="">注册</a>
-      </div>
-    </div>
-  </div>
+  </form>
 </div>
+
+<div class="model model-login">
+  <div class="mask"></div>
+  <form action="/login" method="post" class="login-form">
+    <div class="model-content signup-content">
+      <a class="model-close-wrap">
+        <i class="fa fa-times-circle-o model-close" aria-hidden="true"></i>
+      </a>
+      <div class="model-title signup-title">
+        登录
+      </div>
+      <div class="model-input">
+        <div class="model-line">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <input type="text" name = "username" placeholder="昵称">
+        </div>
+        <div class="model-line">
+          <i class="fa fa-lock" aria-hidden="true"></i>
+          <input type="password" name = "password" placeholder="密码">
+        </div>
+        <div class="model-confirm">
+          <input type="submit" value="登录">
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
 
 </div>
 </body>
