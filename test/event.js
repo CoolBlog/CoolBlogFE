@@ -1,6 +1,6 @@
 window.event = {
   init: function () {
-    this.setIndexPageBrief();
+    // this.setIndexPageBrief();
 
   },
   setIndexPageBrief: function () {
